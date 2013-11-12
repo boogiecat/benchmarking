@@ -11,6 +11,13 @@ def generate_array(length, string_length)
   a
 end
 
+def generate_boolean_array(length)
+  a = []
+  length.times do
+    a << [true, false].sample
+  end
+  a
+end
 
 def generate_nils(size)
   a = []
@@ -27,7 +34,6 @@ def generate_hash(capacity, key_length, value_length)
   end
   h
 end
-#puts generate_hash(10, 2, 3)
 
 
 
